@@ -27,7 +27,7 @@ import pagesZavrsniProjekat.MyWishListTab;
 		MyPersonalInfoTab myPersonalInfoTab;
 		MyWishListTab myWishListTab;
 		AddingProductsToCartPage addingProductsToCartPage;
-		//ActionsBuilder actionsBuilder;
+		
 	
 	@BeforeClass
 		public void preSvihTestova() throws IOException {
@@ -40,10 +40,9 @@ import pagesZavrsniProjekat.MyWishListTab;
 		citacIzExcela = new ExcelReader("data/Zavrsni Projekat1.xlsx");
 		homerUrl = "http://automationpractice.com";
 		myAccountTab = new MyAccountTab(driver);
+		myPersonalInfoTab = new MyPersonalInfoTab(driver);
 		myWishListTab = new MyWishListTab(driver);
 		addingProductsToCartPage = new AddingProductsToCartPage(driver);
-		//actionsBuilder = new ActionsBuilder(driver);
-		
 	}
 	
 	@AfterClass
